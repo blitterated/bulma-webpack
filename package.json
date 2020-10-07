@@ -1,0 +1,11 @@
+{
+  "name": "bulma-webpack",
+  "version": "1.0.0",
+  "description": "https://bulma.io/documentation/customize/with-webpack/",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "b1tb4ng",
+  "license": "BSD-2-Clause"
+}
