@@ -10,14 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                ]
-            },
-            {
-                test: /\.s(a|c)ss$/,
+                test: /\.(c|sa|sc)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
@@ -32,9 +25,6 @@ module.exports = {
                 ]
             }
         ]
-    },
-    resolve: {
-        modules: ['node_modules']
     },
     plugins: [
         new MiniCssExtractPlugin({
