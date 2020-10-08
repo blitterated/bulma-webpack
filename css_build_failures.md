@@ -124,24 +124,26 @@ Upon closer inspection of the stack trace, it's css-loader, not sass-loader scre
 Saw two examples of css and s[ac]ss being processed by the same rule
 
 
-
 Dammit. css, sass, and scss need to be processed by the same rule.
 
 
-
+I thought I'd be tricky and instead of following directions and using `mystyles.scss`, I used `mystyles.css`.
+Well, I did want to learn how css and sass played together in webpack. I learned!
 
 
 
 # References
 
-* [Resolving import at-rules (sass-loader docs)](https://github.com/webpack-contrib/sass-loader#resolving-import-at-rules)
-* [webpack alias with tilde not working for imports](https://github.com/webpack-contrib/sass-loader/issues/566)
-* [Custom import example](https://stackoverflow.com/a/37118406)
-* [webpack resolve.extensions](https://webpack.js.org/configuration/resolve/#resolveextensions)
-* [webpack sass-loader](https://webpack.js.org/loaders/sass-loader/)
-
-After noticing that is was css-loader failing:
-* [Google "css-loader not resolving sass file in node_modules"](https://www.google.com/search?client=firefox-b-1-d&q=css-loader+not+resolving+sass+file+in+node_modules)
-* [Unable to load node_modules lib with import](https://github.com/yibn2008/fast-sass-loader/issues/40)
-* [Loading css, css-modules, and Sass with webpack](https://adamrackis.dev/css-modules/)
+* The article that started all this
+    * [Use Bulma with webpack](https://bulma.io/documentation/customize/with-webpack/)
+* Digging into webpack, sass, css, resolving, @import at-rules, etc.
+    * [Resolving import at-rules (sass-loader docs)](https://github.com/webpack-contrib/sass-loader#resolving-import-at-rules)
+    * [webpack alias with tilde not working for imports](https://github.com/webpack-contrib/sass-loader/issues/566)
+    * [Custom import example](https://stackoverflow.com/a/37118406)
+    * [webpack resolve.extensions](https://webpack.js.org/configuration/resolve/#resolveextensions)
+    * [webpack sass-loader](https://webpack.js.org/loaders/sass-loader/)
+* After noticing that is was css-loader failing:
+    * [Google "css-loader not resolving sass file in node_modules"](https://www.google.com/search?client=firefox-b-1-d&q=css-loader+not+resolving+sass+file+in+node_modules)
+    * [Unable to load node_modules lib with import](https://github.com/yibn2008/fast-sass-loader/issues/40)
+    * [Loading css, css-modules, and Sass with webpack](https://adamrackis.dev/css-modules/)
 
